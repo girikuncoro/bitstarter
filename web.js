@@ -3,7 +3,7 @@ var express = require('express');
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-  var buffer = new Buffer();
+  var buffer = new Buffer(32);
   response.send('Hello world 3!');
 });
 
