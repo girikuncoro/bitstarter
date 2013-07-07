@@ -5,7 +5,7 @@ var app = express.createServer(express.logger());
 app.get('/', function(request, response) {
   var fs = require("fs");
   var buffer = new Buffer(32);
-  console.log(fs.readFileSync("~/bitstarter/index.html"));
+  console.log(fs.readFileSync("index.html"));
 
   response.send('Hello world 3!');
 });
